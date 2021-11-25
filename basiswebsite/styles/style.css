@@ -1,0 +1,116 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+h1 {
+  color:white; 
+  background: red;
+  justify-self: start;
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+.imagelogo {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+}
+
+.imagetip {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+  float: right;
+}
+.imagezoek {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+  float: right;
+
+}
+.imagemenu {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+  float: right;
+
+}
+
+main nav {
+  background-color: lightgray;
+  list-style: none;
+  padding: 1em;
+  text-align: center;
+
+}
+
+main nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  display: flex;
+  column-gap: 50%;
+  width: 22%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* stad misdaad stad */
+main > ul {
+  margin: 0;
+  padding: 0;
+}
+main > ul li {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  column-gap: .5em;
+}
+main > ul li img {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 6em;
+  margin-top: .5em;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.titel {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-align: left;
+
+}
+
+.bbq {
+  justify-content: left;
+}
+
+.thema {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
+
+.horeca {
+  width: 100%;
+}
+
+.auto {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+}
