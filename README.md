@@ -22,7 +22,7 @@ Xavier Ruperink
 Blauw
 
 #### Je focus:
-Responsive (kies uit responsive óf surface plane)
+Surface (kies uit responsive óf surface plane)
  
 </details>
 
@@ -40,11 +40,11 @@ https://www.at5.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home pagina
-<img src="images/at5home.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/at5homepagina.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Het weer
-<img src="images/at5weer.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/at5tippagina.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -56,7 +56,7 @@ Het weer
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/at5homepagina.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -77,24 +77,27 @@ Het weer
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Wat goed ging was het positioneren van de tekst en plaatjes.
+Waar ik nog moeite mee had was het toevoegen van icoontjes en ook 
+zou ik nog willen leren hoe ik een hamburgermenu kan maken.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Xavier         | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| icoontjes en   | en dit             | en ik dit    | en dan ik dat    |
+| hamburger menu | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- divs weghalen
+- classes weghalen
+- h1, h2 en h3 aanpassen
 - ...
 
 </details>
@@ -110,7 +113,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+het positioneren van tekst gaat al beter. Aan het begin van de week vond ik het ook lastig om mijn divs
+en classes weg te halen. Uiteindelijk is dit wel gelukt gelukkig. Ook is het mij gelukt om icoontjes
+toe te voegen.
 
 ### Agenda voor meeting
 samen met je groepje opstellen

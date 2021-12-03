@@ -1,5 +1,195 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+:root {
+  --background-highlight-color: #E2212A;
+  --text-color: black;
+  --titel-color: white;
+  --background-color: #f4f4f4;
+}
+
+header {
+  background-color: var(--titel-color);
+}
+
+body {
+  background: var(--background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: var(--titel-color);
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-align: left;
+}
+
+h3 {
+  color: var(--titel-color);
+  background-color: var(--background-highlight-color);
+  border-radius: 3px;
+  justify-self: start;
+  font-size: 11.934px;
+  font-family: sans-serif;
+  padding: 5.1px;
+  position: absolute;
+  top: -4px;
+  left: 100px;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+
+p {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: var(--titel-color);
+
+}
+
+
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header>img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+header nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+header nav ul li img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+  float: right;
+}
+
+header nav ul li {
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+main section{
+  position: relative;
+  text-align: center;
+  color: var(--titel-color);
+  padding: 0px;
+}
+
+main>section:first-of-type h3 {
+  top: 120px;
+  left: 15px;
+}
+
+main>section:nth-of-type(2) h3 {
+  top: 120px;
+  left: 15px;
+}
+
+main>section:first-of-type img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+main>section:nth-of-type(2) img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+main button:first-of-type svg {
+  fill: var(--titel-color);
+  width: 2em;
+  margin: 10px;
+}
+
+main nav {
+  background-color: var(--background-color);
+  list-style: none;
+  text-align: center;
+}
+
+main>nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+main>nav ul li {
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+main>ul {
+  margin: 0;
+  padding: 0;
+}
+
+main>ul li {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  column-gap: .5em;
+  background-color: var(--background-color);
+  position: relative;
+}
+
+main>ul li img {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 6em;
+  margin-top: .5em;
+}
+
+main nav ul li:first-of-type svg {
+  width: 25px;
+  margin: 12px;
+}
+
+main nav ul li:nth-of-type(2) svg {
+  width: 36px;
+  margin: 12px;
+}
+
+main nav ul li:nth-of-type(3) svg {
+  width: 20px;
+  margin: 12px;
+}
+
+button {
+  position: absolute;
+  left: 150px;
+  background-color: var(--background-highlight-color);
+  display: flex;
+  border: none;
+  border-radius: 3px;
+}
