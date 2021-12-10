@@ -1,0 +1,446 @@
+/* CSS Document */
+@import url(main.css);
+
+
+/*******************************************/
+/** MAIN GROTE AFBEELDINGEN **/
+/*******************************************/
+main section {
+  position: relative;
+  text-align: center;
+  padding: 0px;
+}
+
+main section h1 {
+  color: var(--groteafbeeldingh4-color);
+}
+
+main>section:first-of-type h3 {
+  color: var(--groteafbeeldingh4-color);
+  top: 50%;
+  left: 15px;
+}
+
+main>section:nth-of-type(3) h3 {
+  color: var(--groteafbeeldingh4-color);
+  top: 50%;
+  left: 15px;
+  text-transform: uppercase;
+}
+
+main>section:first-of-type img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+main>section:nth-of-type(3) img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+/*******************************************/
+/** MAIN UL LI **/
+/*******************************************/
+main nav {
+  background-color: var(--background-color);
+  list-style: none;
+  text-align: center;
+}
+
+main>nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+main>nav ul li a {
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+main nav ul h4 {
+  color: var(--icon-color);
+  font-weight: 10;
+  padding: 1px;
+}
+
+
+
+
+
+
+main>ul {
+  margin: 0;
+  padding: 0;
+}
+
+main>ul li a {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  column-gap: .5em;
+  background-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+  margin: 0px 6px;
+}
+
+main ul li {
+  padding-bottom: 10px;
+}
+
+main ul li a h3{
+  text-transform: uppercase;
+}
+
+main ul li:hover {
+  cursor: pointer
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+main section:first-of-type:hover {
+  cursor: pointer;
+}
+
+main section:nth-of-type(2):hover {
+  cursor: pointer;
+}
+
+main ul li:active {
+  background-color: lightblue;
+}
+
+main>ul li img {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 6em;
+  margin-top: .5em;
+}
+
+main nav ul li:first-of-type svg {
+  width: 25px;
+  margin: 12px;
+  bottom: 1px;
+  fill: var(--icon-color)
+}
+
+main nav ul li:nth-of-type(2) svg {
+  width: 36px;
+  margin: 12px;
+  fill: var(--icon-color)
+}
+
+main nav ul li:nth-of-type(3) svg {
+  width: 20px;
+  margin: 12px;
+
+}
+
+main ul a {
+  color: var(--text-color);
+  ;
+  text-decoration: none;
+}
+
+/*******************************************/
+/** FONT SIZE BUTTONS **/
+/*******************************************/
+main section:nth-of-type(2) {
+  display: flex;
+  left: -70px;
+  margin: -15px;
+  top: -10px;
+  border: 10px;
+}
+
+main section:first-of-type h3{
+  text-transform: uppercase;
+}
+
+/*******************************************/
+/** FONT SIZE KLEIN BUTTON **/
+/*******************************************/
+main section:nth-of-type(2) button {
+  background-color: red;
+  border: solid 4px red;
+  width: 100%;
+}
+
+main section:nth-of-type(2) button:hover {
+  border: solid 4px darkred;
+  background-color: darkred;
+  transition: .5s;
+}
+
+main section:nth-of-type(2) button:active {
+  border: solid 4px red;
+  background-color: darkred;
+}
+
+main section:nth-of-type(2) button h6:first-of-type {
+  color: white;
+
+}
+
+main section:nth-of-type(2) button h6::first-letter {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*******************************************/
+/** FONT SIZE GROOT BUTTON **/
+/*******************************************/
+main section:nth-of-type(2) button:nth-of-type(2) {
+  background-color: red;
+}
+
+main section:nth-of-type(2) button:nth-of-type(2):hover {
+  border: solid 4px darkred;
+  background-color: darkred;
+  transition: .5s;
+}
+
+main section:nth-of-type(2) button:nth-of-type(2):active {
+  border: solid 4px red;
+  background-color: darkred;
+}
+
+main section:nth-of-type(2) button:nth-of-type(2) h6 {
+  color: white;
+}
+
+main section:nth-of-type(2) button:nth-of-type(2) h6::first-letter {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+/*******************************************/
+/** LOADING BUTTON **/
+/*******************************************/
+button {
+  left: 150px;
+  display: flex;
+  border: none;
+  border-radius: 3px;
+  margin: 13px;
+}
+
+main button {
+  margin-left: 30%;
+  background-color: red;
+}
+
+main button svg {
+  fill: white;
+  width: 2em;
+  margin: 10px;
+}
+
+@keyframes lord-animation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main button:hover {
+  background-color: darkred;
+  transition: .5s;
+
+}
+
+main button:hover svg {
+  animation-name: lord-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+main article button {
+  margin-left: 20px;
+}
+
+main button:active {
+  background-color: var(--background-highlight-color);
+}
+
+main button h6 {
+  font-size: 13px;
+  margin: 13px;
+  text-transform: uppercase;
+}
+
+/*******************************************/
+/** MAIN SPECIALS **/
+/*******************************************/
+main article {
+  background-color: none;
+  background-image: linear-gradient(120deg,
+      red,
+      darkred 6em,
+      red 6em,
+      darkred 10em,
+      red 10em,
+      darkred 14em,
+      red 14em,
+      darkred);
+  margin: 0px;
+}
+
+
+main article section:first-of-type {
+  display: flex;
+  gap: 2em;
+  overflow-x: auto;
+}
+
+main article section img {
+  width: 370px;
+  margin: 10px;
+  padding: 10px;
+}
+
+main article h5 {
+  padding: 10px;
+}
+
+/*******************************************/
+/** KNOP ALLE SPECIALS **/
+/******************************************/
+main article:first-of-type h2:nth-of-type(1) {
+  color: white;
+  width: 230px;
+  border: solid #9e1317;
+  background: blue;
+  border-radius: 3px;
+  background-color: #9e1317;
+  padding: none;
+  padding-right: 90px;
+  font-size: 14px;
+  border-width: 10px;
+  text-transform: uppercase;
+}
+
+main article button:first-of-type {
+  background-color: #9e1317;
+}
+
+main article:first-of-type button:nth-of-type(1) {
+  padding: none;
+  padding: 0px;
+}
+
+/*******************************************/
+/** TEKST EERSTE FOTO **/
+/*******************************************/
+main article section:first-of-type h1:first-of-type {
+  color: #a9a4a2;
+  background: none;
+  left: 37px;
+  bottom: 40px;
+  font-size: 30px;
+}
+
+main article section:first-of-type a:first-of-type h3 {
+  color: #a9a4a2;
+  left: 40px;
+  top: 190px;
+  background: none;
+  text-transform: uppercase;
+}
+
+/*******************************************/
+/** TEKST TWEEDE FOTO **/
+/*******************************************/
+main article section:first-of-type a:nth-of-type(2) h1 {
+  color: #a9a4a2;
+  background: none;
+  left: 440px;
+  bottom: 70px;
+  font-size: 30px;
+  width: 100%;
+}
+
+main article section:first-of-type a:nth-of-type(2) h3 {
+  color: #a9a4a2;
+  background: none;
+  left: 435px;
+  top: 190px;
+}
+
+/**********************************/
+/*KNOP D*/
+/**********************************/
+footer article section button {
+  color: blue;
+  background-color: black;
+  border: 1px solid #a9a4a2;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 16px;
+  margin-left: 55px;
+  margin-top: -32px;
+}
+
+footer article section button h2 {
+  color: #a9a4a2;
+  background-color: black;
+  margin-top: -11px;
+  margin-left: -6px;
+  font-size: 17px;
+}
+
+/**********************************/
+/*KNOP A*/
+/**********************************/
+footer article section button:nth-of-type(2) {
+  color: #a9a4a2;
+  background: linear-gradient(-90deg, white 50%, black 50%);
+  border: 1px solid #a9a4a2;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 16px;
+  margin-left: 95px;
+  margin-top: -46px;
+}
+
+footer article section button:nth-of-type(2) h2 {
+  font-size: 17px;
+  background: none;
+  /* color: linear-gradient(-90deg, black 50%, white 50%); */
+  color: black;
+  margin-left: -5px;
+}
+
+/**********************************/
+/*KNOP L*/
+/**********************************/
+footer article section button:nth-of-type(3) {
+  color: blue;
+  background-color: #a9a4a2;
+  border: 1px solid #a9a4a2;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 16px;
+  margin-left: 135px;
+  margin-top: -47px;
+}
+
+footer article section button:nth-of-type(3) h2 {
+  color: black;
+  background: #a9a4a2;
+}
