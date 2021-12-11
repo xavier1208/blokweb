@@ -3,7 +3,7 @@
 // HAMBURGER MENU
 
 var hamMenu =
-  document.querySelector("header nav ul li ul")
+  document.querySelector("header nav ul li ul");
 
 var hamButton =
   document.querySelector(".icon");
@@ -23,15 +23,15 @@ fontsizeknop.addEventListener("click", fontgrootte);
 function fontgrootte() {
   console.log(fontsizeknop);
   document.body.style.setProperty("font-size", "1.5em");
-    snd.play()
+  snd.play();
 }
 // GELUID groeien
 var buttonElementgroeien = document.querySelector('#groeien');
 var audio1 = document.getElementById("audioMusic1");
 
 function groeigeluid() {
-    audio1.play(); 
-}; 
+  audio1.play();
+}
 buttonElementgroeien.addEventListener('click', groeigeluid);
 
 
@@ -41,16 +41,13 @@ fontsizeknop2.addEventListener("click", fontgrootte2);
 
 function fontgrootte2() {
   document.body.style.setProperty("font-size", "1em");
-      snd.play()
+  snd.play();
 }
 // GELUID KRIMPEN
 var buttonElementkrimpen = document.querySelector('#krimpen');
 var audio2 = document.getElementById("audioMusic2");
 
 function krimpgeluid() {
-    audio2.play(); 
-}; 
+  audio2.play();
+}
 buttonElementkrimpen.addEventListener('click', krimpgeluid);
-
-
-

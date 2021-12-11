@@ -15,6 +15,8 @@ body{
   --background-color: #f4f4f4;
   --groteafbeeldingh4-color: white;
   --icon-color: #323232;
+  --rand-kleur: white;
+  --background-color2:white;
 }
 
 /*******************************************/
@@ -28,38 +30,36 @@ body{
     --titel-color: black;
     --groteafbeeldingh4-color: white;
     --icon-color: #666666;
+      --rand-kleur: #666666;
+        --background-color2:#1e1e1e;
+
+
   }
 }
 
 
 img:hover {
   transform-origin: right center;
-  transform: scale(1.1);
+  transform: scale(0.99);
 }
 
 body {
-  background: var(--background-color);
+  background: var(--background-color2);
 }
 
 ul {
   list-style: none;
 }
 
-h1 {
-  font-size: 20px;
+h2 {
+  font-size: 19px;
   font-family: sans-serif;
   color: var(--titel-color);
-  position: absolute;
-  bottom: 8px;
   left: 16px;
   text-align: left;
 }
 
-h2 {
-  font-size: 0.75em;
-  font-family: sans-serif;
-  color: #a9a4a2;
-}
+
 
 h3 {
   color: var(--groteafbeeldingh4-color);
@@ -71,7 +71,7 @@ h3 {
   padding: 5.1px;
   position: absolute;
   top: -4px;
-  left: 100px;
+  left: 110px;
 }
 
 h4 {
@@ -80,16 +80,15 @@ h4 {
   padding-top: 15px;
 }
 
-h5 {
-  font-size: 22px;
-  margin: 0px 0px 16px;
-  font-family: sans-serif;
-  color: white;
-  left: 100px;
-}
 
-h6 {
-  color: var(--groteafbeeldingh4-color);
+ 
+
+p{
+    font-size: 0.75em;
+    font-family: sans-serif;
+    color: #a9a4a2;
+    font-weight: bolder;
+    margin: 9.96px 0px;
 }
 
 /*******************************************/
@@ -108,12 +107,14 @@ header {
   background-color: var(--background-color);
 }
 
-header>img {
+/* header a h1 img {
   border-radius: 4px;
   padding: 5px;
   width: 50px;
   height: 50px;
-}
+} */
+
+ 
 
 header nav ul {
   margin: 0;
@@ -135,9 +136,15 @@ header nav ul li {
   cursor: pointer;
 }
 
-body header a img {
+body header a h1 {
+   margin: 0;
+}
+
+body header a:first-of-type img {
   width: 48px;
   margin: 4px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 
@@ -153,7 +160,7 @@ header nav ul li ul {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  background: #f4f4f4;
+  background:var(--background-color);
   left: 0;
   right: 0;
 
@@ -163,12 +170,12 @@ header nav ul li ul {
 header nav ul li ul li {
   display: flex;
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid var(--rand-kleur);
   border-radius: 1%;
 }
 
-header nav ul li ul h2 {
-  color: grey;
+header nav ul li ul p {
+  color: var(--icon-color);
   justify-content: flex-start;
   padding-left: 1em;
   text-transform: uppercase;
@@ -190,7 +197,6 @@ header nav ul li ul li a {
 /*FOOTER BRUINE GEDEELTE*/
 /**********************************/
 footer article:first-of-type {
-  background-color: none;
   background-image: linear-gradient(70deg,
       #221a17,
       #241e19 2em,
@@ -210,88 +216,66 @@ footer {
 }
 
 /**********************************/
+/*FOOTER LINKJES*/
+/**********************************/
+footer article ul {
+    padding:0;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+footer article ul li a p{
+    COLOR:#a9a4a2;
+}
+
+footer article ul li a {
+text-decoration: none;
+}
+
+footer article ul li a p{
+    width:20%;
+}
+
+
+footer article ul li a p {
+    cursor:pointer;
+}
+
+footer article ul li a p:hover{
+    COLOR:WHITE;
+}
+
+footer article ul li a p:active{
+    COLOR:grey;
+}
+
+/**********************************/
 /*AT5 LOGO*/
 /**********************************/
 footer article:first-of-type img {
   width: 55px;
-  margin: 24px 0px;
-}
-
-footer h2:hover {
-  color: white;
-}
-
-footer h2:active {
-  color: gray;
-}
-
-footer article section h2 a {
-  color: #a9a4a2;
-  text-decoration: none;
-}
-
-footer article section h2 a:hover {
-  color: white;
-}
-
-footer article section h2 a:active {
-  color: grey;
-}
-
-/**********************************/
-/*ALLE H2 IN FOOTER*/
-/**********************************/
-footer article section:first-of-type a {
-text-decoration: none;
-
-}
-
-/**********************************/
-/*TEKST BOVEN THEMA*/
-/**********************************/
-footer article section:first-of-type a:nth-of-type(10) h2 {
-  /* color: #241e19; */
-  color:red;
-}
-
-/**********************************/
-/*TEKST BOVEN SOCIAL MEDIA*/
-/**********************************/
-footer article section:first-of-type a:nth-of-type(11) h2 {
-  /* color: #231c18; */
-    color:red;
-
-}
-
-footer article section:first-of-type a:nth-of-type(18) h2 {
-  /* color: #231c18; */
-  color:red;
-}
-
-footer article section:first-of-type a:nth-of-type(19) h2 {
-  /* color: #231c18; */
-  color:red;
+  margin-top: 24px ;
 }
 
 /**********************************/
 /*SOCIAL MEDIA */
 /**********************************/
-footer article section:nth-of-type(2) ul li a {
+footer article section:first-of-type ul li a {
   display: flex;
   align-items: center;
   margin: 0;
   text-decoration: none;
 }
 
-footer article section:nth-of-type(2) ul {
-  margin: 0;
-  padding: 0;
+footer article section:first-of-type ul {
+  
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
 }
 
-footer article section:nth-of-type(2) {
+footer article section:first-of-type {
   display: grid;
   grid-template-columns: 1fr 1fr;
   cursor: pointer;
@@ -300,13 +284,13 @@ footer article section:nth-of-type(2) {
 /**********************************/
 /*FACEBOOK ICOON*/
 /**********************************/
-footer article section:nth-of-type(2) ul li:first-of-type svg {
+footer article section:first-of-type ul li:first-of-type svg {
   width: 22px;
   fill: #a9a4a2;
   margin: 10px;
 }
 
-footer article section:nth-of-type(2) ul li:first-of-type svg:hover {
+footer article section:first-of-type ul li:first-of-type svg:hover {
   width: 22px;
   fill: white;
   margin: 10px;
@@ -315,28 +299,28 @@ footer article section:nth-of-type(2) ul li:first-of-type svg:hover {
 /**********************************/
 /*OVERIGE SOCIAL MEDIA ICOONTJES*/
 /**********************************/
-footer article section:nth-of-type(2) ul li:first-of-type  a h2{
+footer article section:first-of-type ul li:first-of-type  a p{
   color:#a9a4a2;
   margin-left: 9px;
 }
 
-footer article section:nth-of-type(2) a:first-of-type svg {
+footer article section:first-of-type a:first-of-type svg {
   width: 30px;
   fill: #a9a4a2;
   margin: 10px;
 }
 
-footer article section:nth-of-type(2) a:first-of-type svg:hover {
+footer article section:first-of-type a:first-of-type svg:hover {
   width: 30px;
   fill: white;
   margin: 10px;
 }
 
-footer article section:nth-of-type(2) a:first-of-type h2 {
+footer article section:first-of-type a:first-of-type p {
   color: #a9a4a2;
 }
 
-footer article section:nth-of-type(2) a:first-of-type h2:hover {
+footer article section:first-of-type a:first-of-type p:hover {
   color: white;
 }
 
@@ -350,25 +334,25 @@ footer article:nth-of-type(2) {
   margin-left: 0px;
 }
 
-footer article:nth-of-type(2) h2 {
+footer article:nth-of-type(2) p {
   color: white;
   font-weight: 10;
 
 }
 
-footer article:nth-of-type(2) a h2 {
+footer article:nth-of-type(2) a p {
   color: white;
   font-weight: 10;
 }
 
-footer article:nth-of-type(2) a h2:hover {
+footer article:nth-of-type(2) a p:hover {
   color: blue;
 }
 
-footer article:nth-of-type(2) a h2:active {
+footer article:nth-of-type(2) a p:active {
   color: grey;
 }
 
-footer article:nth-of-type(2) a h2 {
+footer article:nth-of-type(2) a p {
   text-decoration: underline;
 }
