@@ -9,7 +9,7 @@ main {
   padding: 20px 32px;
 }
 
-header{
+header {
   position: sticky;
 }
 
@@ -35,12 +35,12 @@ textarea {
   padding: 80px 80px;
 }
 
-main p:first-of-type span{
-font-weight: bold;
+main p:first-of-type span {
+  font-weight: bold;
 }
 
-main p:nth-of-type(2) span{
-font-weight: bold;
+main p:nth-of-type(2) span {
+  font-weight: bold;
 }
 
 /*******************************************/
@@ -54,25 +54,25 @@ main p:nth-of-type(3) {
 
 main p:nth-of-type(3) a {
   font-size: 14px;
-  color: blue;
+  color: var(--hover-blue);
   font-weight: 400;
 }
 
 main p:nth-of-type(3) a:hover {
   font-size: 14px;
-  color: red;
+  color: var(--background-highlight-color);
   font-weight: 400;
 }
 
 main p:nth-of-type(3) a:active {
   font-size: 14px;
-  color: darkred;
+  color: var(--button-border);
   font-weight: 400;
 }
+
 /*******************************************/
 /** EINDE MAIN EMAILADRES**/
 /*******************************************/
-
 main p:nth-of-type(4) {
   font-size: 14px;
   color: var(--text-color);
@@ -95,48 +95,51 @@ main p:nth-of-type(6) {
 /*******************************************/
 /** FORMULIER**/
 /*******************************************/
-input[type=text], select {
+input[type=text],
+select {
   width: 100%;
   padding: 80px 80px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--active-grey);
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-form{
+form {
   background-color: var(--background-color2);
 }
 
 input[type=submit] {
   height: 3em;
   padding: 0 1em;
-  background-color: #d13835;
-  color: white;
+  color: var(--groteafbeeldingh4-color);
+  background-color: var(--button-color);
   border: none;
   border-radius: 1.5em;
   margin-right: 100px;
-  margin-top: 20px;
+  margin-top: 21px;
+  margin-bottom: 21px;
   font-weight: bolder;
   cursor: not-allowed;
   width: 100%;
 }
 
 input[type=submit]:hover {
-  background-color: darkred;
+  background-color: var(--button-border);
 }
 
 input[type=submit]:disabled {
-  background-color: #e29695;
+  background-color: var(--disabled-button);
 }
 
 main section:first-of-type {
   border-radius: 5px;
   padding: 20px;
 }
+
 /*******************************************/
-/** EINDE FORMULIER **/
+/** EIND FORMULIER **/
 /*******************************************/
 
 /**********************************/
@@ -144,19 +147,18 @@ main section:first-of-type {
 /*********************************/
 main section button:first-of-type {
   height: 3em;
-  border: 1px solid #d13835;
+  border: 1px solid var(--button-color);
   border-radius: 1.5em;
   margin-top: 10px;
   cursor: pointer;
   background-color: var(--background-color2);
-  
 }
 
 main section button:first-of-type p {
   margin-top: -40px;
   height: 3em;
   padding: 0 1em;
-  color: #d13835;
+  color: var(--button-color);
   font-weight: bolder;
   font-size: 16px;
   padding-left: 40px;
@@ -168,18 +170,17 @@ main section button:first-of-type img {
   margin-top: -5px;
 }
 
-main section button:hover:first-of-type  {
-  border: 2px solid #d13835;
+main section button:hover:first-of-type {
+  border: 2px solid var(--button-color);
 }
-main section button:active:first-of-type  {
-  border: 2px solid darkred;
+
+main section button:active:first-of-type {
+  border: 2px solid var(--button-border);
 }
 
 main section:first-of-type {
-  padding:0;
+  padding: 0;
 }
-
-
 
 /**********************************/
 /*VERDER KNOP*/
@@ -187,7 +188,7 @@ main section:first-of-type {
 main section:nth-of-type(2) button {
   height: 3em;
   padding: 0 1em;
-  background-color: #d13835;
+  background-color: var(--button-color);
   color: white;
   border: none;
   border-radius: 1.5em;
@@ -204,17 +205,15 @@ main section:nth-of-type(2) button {
 }
 
 main section:nth-of-type(2) button:disabled {
-  background-color: #e29695;
-
+  background-color: var(--disabled-button);
 }
-
 
 /**********************************/
 /*KNOP D*/
 /**********************************/
 footer article button:first-of-type {
-  background-color: black;
-  border: 1px solid #a9a4a2;
+  background-color: var(--footer-achtergrond);
+  border: 1px solid var(--footer-text);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -223,9 +222,8 @@ footer article button:first-of-type {
   margin-top: -20px;
 }
 
-footer article  button p {
-  color: #a9a4a2;
-  background-color: black;
+footer article button p {
+  color: var(--footer-text);
   margin-top: -11px;
   margin-left: -6px;
   font-size: 17px;
@@ -234,9 +232,9 @@ footer article  button p {
 /**********************************/
 /*KNOP A*/
 /**********************************/
-footer article  button:nth-of-type(2) {
+footer article button:nth-of-type(2) {
   background: linear-gradient(-90deg, white 50%, black 50%);
-  border: 1px solid #a9a4a2;
+  border: 1px solid var(--footer-text);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -244,20 +242,19 @@ footer article  button:nth-of-type(2) {
   margin-top: -46px;
 }
 
-footer article  button:nth-of-type(2) p {
+footer article button:nth-of-type(2) p {
   font-size: 17px;
   background: none;
-  /* color: linear-gradient(-90deg, black 50%, white 50%); */
-  color: black;
+  color: var(--footer-achtergrond);
   margin-left: -5px;
 }
 
 /**********************************/
 /*KNOP L*/
 /**********************************/
-footer article  button:nth-of-type(3) {
-  background-color: #a9a4a2;
-  border: 1px solid #a9a4a2;
+footer article button:nth-of-type(3) {
+  background-color: var(--footer-text);
+  border: 1px solid var(--footer-text);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -265,7 +262,6 @@ footer article  button:nth-of-type(3) {
   margin-top: -47px;
 }
 
-footer article  button:nth-of-type(3) p {
-  color: black;
-  background: #a9a4a2;
+footer article button:nth-of-type(3) p {
+  color: var(--footer-achtergrond);
 }

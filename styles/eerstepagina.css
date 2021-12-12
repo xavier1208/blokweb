@@ -70,9 +70,7 @@ main nav ul h4 {
   color: var(--icon-color);
   font-weight: 10;
   padding: 1px;
-
 }
-
 
 main>ul {
   margin: 0;
@@ -113,12 +111,12 @@ main section:nth-of-type(2):hover {
   cursor: pointer;
 }
 
-main ul li:active {
-  background-color: lightblue;
+main ul li a:active {
+  background-color: var(--ulli-active);
+  z-index: 1000;
 }
 
 main>ul li img {
-  grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
   height: 6em;
@@ -141,12 +139,10 @@ main nav ul li:nth-of-type(2) svg {
 main nav ul li:nth-of-type(3) svg {
   width: 20px;
   margin: 12px;
-
 }
 
 main ul a {
   color: var(--text-color);
-
   text-decoration: none;
 }
 
@@ -169,29 +165,29 @@ main section:first-of-type h3 {
 /** FONT SIZE KLEIN BUTTON **/
 /*******************************************/
 main section:nth-of-type(2) button {
-  background-color: red;
-  border: solid 4px red;
+  background-color: var(--background-highlight-color);
+  border: solid 4px var(--background-highlight-color);
   width: 100%;
 }
 
 main section:nth-of-type(2) button:hover {
-  border: solid 4px darkred;
-  background-color: darkred;
+  border: solid 4px var(--button-border);
+  background-color: var(--button-border);
   transition: .5s;
 }
 
 main section:nth-of-type(2) button:active {
-  border: solid 4px red;
-  background-color: darkred;
+  border: solid 4px var(--button-active);
+  background-color: var(--button-border);
 }
 
 main section:nth-of-type(2) button p:first-of-type {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
 
 }
 
 main section:nth-of-type(2) button p::first-letter {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -200,26 +196,26 @@ main section:nth-of-type(2) button p::first-letter {
 /** FONT SIZE GROOT BUTTON **/
 /*******************************************/
 main section:nth-of-type(2) button:nth-of-type(2) {
-  background-color: red;
+  background-color: var(--background-highlight-color);
 }
 
 main section:nth-of-type(2) button:nth-of-type(2):hover {
-  border: solid 4px darkred;
-  background-color: darkred;
+  border: solid 4px var(--button-border);
+  background-color: var(--button-border);
   transition: .5s;
 }
 
 main section:nth-of-type(2) button:nth-of-type(2):active {
-  border: solid 4px red;
-  background-color: darkred;
+  border: solid 4px var(--button-active);
+  background-color: var(--button-border);
 }
 
 main section:nth-of-type(2) button:nth-of-type(2) p {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
 }
 
 main section:nth-of-type(2) button:nth-of-type(2) p:first-letter {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -237,11 +233,11 @@ button {
 
 main button {
   margin-left: 30%;
-  background-color: red;
+  background-color: var(--background-highlight-color);
 }
 
 main button svg {
-  fill: white;
+  fill: var(--groteafbeeldingh4-color);
   width: 2em;
   margin: 10px;
 }
@@ -257,7 +253,7 @@ main button svg {
 }
 
 main button:hover {
-  background-color: darkred;
+  background-color: var(--button-border);
   transition: .5s;
 
 }
@@ -281,7 +277,7 @@ main button p {
   font-size: 13px;
   margin: 13px;
   text-transform: uppercase;
-  color: white;
+  color: var(--groteafbeeldingh4-color);
 }
 
 /*******************************************/
@@ -299,7 +295,6 @@ main article {
       #c5171d);
   margin: 0px;
 }
-
 
 main article section:first-of-type {
   display: flex;
@@ -319,7 +314,7 @@ main article h2:first-of-type {
   font-size: 22px;
   margin: 0px 0px 16px;
   font-family: sans-serif;
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   display: block;
   bottom: 0;
   margin-bottom: -20px;
@@ -329,12 +324,12 @@ main article h2:first-of-type {
 /** KNOP ALLE SPECIALS **/
 /******************************************/
 main article:first-of-type p:nth-of-type(1) {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   width: 230px;
-  border: solid #9e1317;
+  border: solid var(--allespecials-achtergrond);
   background: blue;
   border-radius: 3px;
-  background-color: #9e1317;
+  background-color: var(--allespecials-achtergrond);
   padding-right: 90px;
   font-size: 14px;
   border-width: 10px;
@@ -342,7 +337,7 @@ main article:first-of-type p:nth-of-type(1) {
 }
 
 main article button:first-of-type {
-  background-color: #9e1317;
+  background-color: var(--allespecials-achtergrond);
 }
 
 main article:first-of-type button:nth-of-type(1) {
@@ -353,7 +348,7 @@ main article:first-of-type button:nth-of-type(1) {
 /** TEKST EERSTE FOTO **/
 /*******************************************/
 main article section:first-of-type h2:first-of-type {
-  color: #a9a4a2;
+  color: var(--footer-text);
   background: none;
   left: 26px;
   bottom: 50px;
@@ -362,68 +357,62 @@ main article section:first-of-type h2:first-of-type {
 }
 
 main article section:first-of-type a:first-of-type h3 {
-  color: #a9a4a2;
+  color: var(--footer-text);
   left: 40px;
   top: 190px;
   background: none;
   text-transform: uppercase;
   z-index: 100;
-
 }
 
 /*******************************************/
 /** TEKST TWEEDE FOTO **/
 /*******************************************/
 main article section:first-of-type a:nth-of-type(2) h2 {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   background: none;
   left: 420px;
   bottom: 50px;
   font-size: 30px;
   width: 100%;
   z-index: 100;
-
 }
 
 main article section:first-of-type a:nth-of-type(2) h3 {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   background: none;
   left: 435px;
   top: 190px;
   z-index: 100;
-
 }
 
 /*******************************************/
 /** TEKST DERDE FOTO **/
 /*******************************************/
 main article section:first-of-type a:nth-of-type(3) h2 {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   background: none;
   left: 800px;
   bottom: 50px;
   font-size: 30px;
   width: 100%;
   z-index: 100;
-
 }
 
 main article section:first-of-type a:nth-of-type(3) h3 {
-  color: white;
+  color: var(--groteafbeeldingh4-color);
   background: none;
   left: 820px;
   top: 190px;
   z-index: 100;
-
 }
 
 /**********************************/
 /*KNOP D*/
 /**********************************/
 footer article button:first-of-type {
-  color: blue;
-  background-color: black;
-  border: 1px solid #a9a4a2;
+  background-color: var(--footer-achtergrond);
+  border: 1px solid var(--footer-text);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -433,8 +422,6 @@ footer article button:first-of-type {
 }
 
 footer article button:first-of-type p {
-  color: #a9a4a2;
-  background-color: black;
   margin-top: -10px;
   margin-left: -6px;
   font-size: 17px;
@@ -444,9 +431,8 @@ footer article button:first-of-type p {
 /*KNOP A*/
 /**********************************/
 footer article button:nth-of-type(2) {
-  color: #a9a4a2;
   background: linear-gradient(-90deg, white 50%, black 50%);
-  border: 1px solid #a9a4a2;
+  border: 1px solid var(--footer-text);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -456,22 +442,19 @@ footer article button:nth-of-type(2) {
 }
 
 footer article button:nth-of-type(2) p {
+  color: var(--footer-achtergrond);
   font-size: 17px;
   background: none;
-  /* color: linear-gradient(-90deg, black 50%, white 50%); */
-  color: black;
-  margin-left: -5px;
+  margin-left: -6px;
   margin-top: -10px;
-
 }
 
 /**********************************/
 /*KNOP L*/
 /**********************************/
 footer article button:nth-of-type(3) {
-  color: blue;
-  background-color: #a9a4a2;
-  border: 1px solid #a9a4a2;
+  background-color: var(--footer-text);
+  border: 1px solid var(--footer-text);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -481,8 +464,8 @@ footer article button:nth-of-type(3) {
 }
 
 footer article button:nth-of-type(3) p {
-  color: black;
-  background: #a9a4a2;
+  color: var(--footer-achtergrond);
+  background: var(--footer-text);
   margin-top: -10px;
   font-size: 17px;
   margin-left: -5px;
